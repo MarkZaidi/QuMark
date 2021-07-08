@@ -1,6 +1,6 @@
 # QuMark
 ## Introduction
-A standardized benchmark for evaluating QuPath 0.2.3 performance. There hasn't been a benchmarking platform for evaluating how well a system is configured for running QuPath. Furthermore, there are a variety of processes that differ in terms of processor thread utilization, meaning that more CPU cores won't always yield a better performance. As such, benchmarking systems would be a easy and reliable way to identify the ideal system for high throughput image analysis in QuPath.
+A standardized benchmark for evaluating QuPath 0.2.3 performance (*Qu*Path Bench*Mark*). There hasn't been a benchmarking platform for evaluating how well a system is configured for running QuPath. Furthermore, there are a variety of processes that differ in terms of processor thread utilization, meaning that more CPU cores won't always yield a better performance. As such, benchmarking systems would be a easy and reliable way to identify the ideal system for high throughput image analysis in QuPath.
 ![image](https://user-images.githubusercontent.com/52012166/124979425-08abd480-e001-11eb-9439-184f6574cb47.png)
 
 Currently, the pixel classifier uses the most memory and 100% utilization for the majority of its time. Near the end, it swaps to a single thread process, which hops between two logical processors (red and blue lines).
