@@ -1,6 +1,8 @@
 # QuMark
+## Introduction
 A standardized benchmark for evaluating QuPath 0.2.3 performance. There hasn't been a benchmarking platform for evaluating how well a system is configured for running QuPath. Furthermore, there are a variety of processes that differ in terms of processor thread utilization, meaning that more CPU cores won't always yield a better performance. As such, benchmarking systems would be a easy and reliable way to identify the ideal system for high throughput image analysis in QuPath.
 ![image](https://user-images.githubusercontent.com/52012166/124979425-08abd480-e001-11eb-9439-184f6574cb47.png)
+
 Currently, the pixel classifier uses the most memory and 100% utilization for the majority of its time. Near the end, it swaps to a single thread process, which hops between two logical processors (red and blue lines).
 
 The first part of the cell detection algorithm also uses a single thread, whereas the second half (when it starts printing into the log) is multithreadded and uses 100% utilization. If I had to guess, the first half splits the image up into tiles (single thread), whereas the second half performs the segmentation. But certainly, the first half of the cell detection algorithm would be heavily rate limiting on systems with a low single thread performance (i.e. servers).
