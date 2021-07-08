@@ -1,0 +1,32 @@
+{
+  "object_classifier_type": "SimpleClassifier",
+  "function": {
+    "classifier_fun": "ClassifyByMeasurementFunction",
+    "measurement": "Cytoplasm: Hematoxylin OD mean",
+    "pathClassBelow": {
+      "name": "Negative",
+      "colorRGB": -9408287
+    },
+    "pathClassEquals": {
+      "name": "Positive",
+      "colorRGB": -377282
+    },
+    "pathClassAbove": {
+      "name": "Positive",
+      "colorRGB": -377282
+    },
+    "threshold": 0.15992028519265597
+  },
+  "pathClasses": [
+    {
+      "name": "Negative",
+      "colorRGB": -9408287
+    },
+    {
+      "name": "Positive",
+      "colorRGB": -377282
+    }
+  ],
+  "filter": "DETECTIONS_ALL",
+  "timestamp": 1625686627646
+}
