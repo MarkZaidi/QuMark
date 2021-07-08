@@ -19,3 +19,7 @@ The time spent on a single measurement cell classifier is negligible, as is meas
 - Feel free to play around with other parameters of your system configuration to see if it influences the benchmark times (reduce RAM available, enable XMP RAM overclock on BIOS, move image to HDD, etc.)
 
 Video demonstration of running the benchmark: https://www.youtube.com/watch?v=66GeU6u5Kko
+## To do
+- Remove background subtraction from nucleus segmentation
+- Retrain new pixel classifier to operate at a much lower resolution
+- Consider switching to different reference image, as the CMU-1.svs ends up being downloaded as a .svs or a .tif depending on the browser.
