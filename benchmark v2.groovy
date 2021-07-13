@@ -18,11 +18,13 @@ clearAllObjects();
 print('Creating annotations from premade pixel classifier')
 def timeStart_PixelClassifier = new Date()
 createAnnotationsFromPixelClassifier("benchmark_classifier", 1000.0, 1000.0, "INCLUDE_IGNORED", "SELECT_NEW")
+//createAnnotationsFromPixelClassifier("benchmark_classifier", 1000.0, 1000.0, "SPLIT", "INCLUDE_IGNORED", "SELECT_NEW")
 TimeDuration PixelClassifier_duration = TimeCategory.minus(new Date(), timeStart_PixelClassifier)
 
 //Detect cells
 print('Detecting cells')
 def timeStart_CellDetection = new Date()
+selectAnnotations();
 runPlugin('qupath.imagej.detect.cells.WatershedCellDetection', '{"detectionImageBrightfield": "Hematoxylin OD",  "requestedPixelSizeMicrons": 0.5,  "backgroundRadiusMicrons": 8.0,  "medianRadiusMicrons": 0.0,  "sigmaMicrons": 1.5,  "minAreaMicrons": 10.0,  "maxAreaMicrons": 400.0,  "threshold": 0.1,  "maxBackground": 2.0,  "watershedPostProcess": true,  "cellExpansionMicrons": 5.0,  "includeNuclei": true,  "smoothBoundaries": true,  "makeMeasurements": true}');
 TimeDuration CellDetection_duration = TimeCategory.minus(new Date(), timeStart_CellDetection)
 
@@ -78,7 +80,7 @@ TimeDuration total_duration = TimeCategory.minus(new Date(), timeStart_total)
 println total_duration
 File timings =new File(buildFilePath(PROJECT_BASE_DIR,"timings_"+timeStart_total.getTime()+".txt"))
 
-
+timings.append("QuMark version 2021_07_13" + "\n")
 timings.append("Pixel Classifier: " + PixelClassifier_duration + "\n")
 timings.append("Cell Detection: " + CellDetection_duration + "\n")
 timings.append("Cell Classification: " + CellClassification_duration + "\n")
