@@ -11,7 +11,7 @@ The time spent on a single measurement cell classifier is negligible, as is meas
 ## Usage
 - Download the QuPath project and groovy script present in this repository
 - If not already installed, install QuPath https://qupath.readthedocs.io/en/stable/docs/intro/installation.html
-- Download CMU-1.tif from http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs. Make sure you store the image on a fast drive such as an SSD. NOTE: MAKE SURE YOUR BROWSER DOWNLOADS THE FILE AS A .TIF. Some end up downloading as .svs, which may give issues during the test.
+- Download CMU-1.tif from https://drive.google.com/file/d/15zgeD9_liFZrJ_HSgWxfoPiuPqm9vJ7d/view?usp=sharing. Make sure you store the image on a fast drive such as an SSD. NOTE: MAKE SURE YOUR BROWSER DOWNLOADS THE FILE AS A .TIF. Some end up downloading as .svs, which may give issues during the test.
 - Launch QuPath and open the project. It'll prompt you to specify where the image is located. Set the directory to the folder containing CMU-1.tif
 - Do NOT open the project entry, as this may influence benchmark times. Launch the script editor, open the benchmark script, select "Run for project", include CMU-1.tif, and select "OK
 - Benchmarking can take anywhere from 5 minutes to 2 hours, depending on how fast of a computer you have. Personally, it takes me ~5:45 to run the script
