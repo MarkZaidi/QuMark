@@ -21,6 +21,9 @@ The time spent on a single measurement cell classifier is negligible, as is meas
 Video demonstration of running the benchmark: https://www.youtube.com/watch?v=66GeU6u5Kko
 ## To do
 - Remove background subtraction from nucleus segmentation
-- Retrain new pixel classifier to operate at a much lower resolution
-- Consider switching to different reference image, as the CMU-1.svs ends up being downloaded as a .svs or a .tif depending on the browser.
-  - Or just reupload on my google drive
+- Retrain the pixel classifier to run at a lower, more representative resolution
+- Include a check to verify cell detection ran without errors (Check if total detected cells remains the same via hardcoded constant detection number)
+- Upload the test image to a separate file hosting server, since some browsers can end up changing the .svs to .tif extension of the downloaded image
+- See if there’s a way to get system specifications exported through the benchmarking script
+- add versioning control
+
