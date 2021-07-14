@@ -3,7 +3,7 @@
   "createTimestamp": 1625684842365,
   "modifyTimestamp": 1625684842365,
   "uri": "file:/C:/Users/Mark%20Zaidi/Documents/QuPath/Tutorials/Benchmark%20v2/project.qpproj",
-  "lastID": 3,
+  "lastID": 5,
   "images": [
     {
       "serverBuilder": {
@@ -73,7 +73,7 @@
         }
       },
       "entryID": 1,
-      "randomizedName": "80d9b084-ebf7-4bb3-a658-11ab664d285b",
+      "randomizedName": "c39b2389-b5a3-4033-a006-3ee826379662",
       "imageName": "CMU-1.tif",
       "metadata": {}
     }

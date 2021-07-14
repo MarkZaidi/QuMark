@@ -2,8 +2,8 @@
   "version": "0.2.3",
   "createTimestamp": 1625684842365,
   "modifyTimestamp": 1625684842365,
-  "uri": "file:/C:/Users/Mark%20Zaidi/Documents/QuPath/Tutorials/Benchmark%20v1/project.qpproj",
-  "lastID": 3,
+  "uri": "file:/C:/Users/Mark%20Zaidi/Documents/QuPath/Tutorials/Benchmark%20v2/project.qpproj",
+  "lastID": 5,
   "images": [
     {
       "serverBuilder": {
@@ -73,7 +73,7 @@
         }
       },
       "entryID": 1,
-      "randomizedName": "5b050090-c727-40e2-8fc3-c75a4ad3dcaf",
+      "randomizedName": "c39b2389-b5a3-4033-a006-3ee826379662",
       "imageName": "CMU-1.tif",
       "metadata": {}
     }
