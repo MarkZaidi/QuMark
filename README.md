@@ -22,5 +22,7 @@ Video demonstration of running the benchmark: https://www.youtube.com/watch?v=66
 ## To do
 - Remove background subtraction from nucleus segmentation
 - Retrain the pixel classifier to run at a lower, more representative resolution
+  - See if you can use the same classifier but applied at a lower resolution
 - Include a check to verify cell detection ran without errors (Check if total detected cells remains the same via hardcoded constant detection number)
 - See if there’s a way to get system specifications exported through the benchmarking script
+- Add println getQuPath().getBuildString() to record QuPath version
