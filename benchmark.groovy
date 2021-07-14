@@ -9,6 +9,17 @@ import qupath.lib.objects.PathCellObject
 import groovy.time.*
 import static qupath.lib.gui.scripting.QPEx.*
 
+//Clear cache before running the benchmark
+def store =  QuPathGUI.getInstance().getViewer().getImageRegionStore()
+try {
+    print "Clearing cache..."
+    store.cache.clear()
+    store.thumbnailCache.clear()
+    System.gc()
+} catch (Exception e2) {
+    e2.printStackTrace()
+}
+
 def timeStart_total = new Date()
 //set stain information
 setImageType('BRIGHTFIELD_H_E');
