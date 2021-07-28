@@ -21,3 +21,5 @@ The time spent on a single measurement cell classifier is negligible, as is meas
 Video demonstration of running the benchmark: https://www.youtube.com/watch?v=66GeU6u5Kko
 ## To do
 - See if there’s a way to get system specifications exported through the benchmarking script
+- Modularize the script to run a specific set of benchmarks depending on which image is being processed. Expands ability to make new benchmarks for different image types (i.e. multiplexed IF), all while keeping it contained within a single script and project.
+- Check if it's possible to export max single thread utilization, max multithread utilization, max memory used, and max I/0 utilization
