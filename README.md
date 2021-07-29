@@ -19,6 +19,21 @@ The time spent on a single measurement cell classifier is negligible, as is meas
 - Feel free to play around with other parameters of your system configuration to see if it influences the benchmark times (reduce RAM available, enable XMP RAM overclock on BIOS, move image to HDD, etc.)
 
 Video demonstration of running the benchmark: https://www.youtube.com/watch?v=66GeU6u5Kko
+## Fastest benchmark (0.2.3 submissions only)
+```
+QuMark version 2021_07_14
+Pixel Classifier: 6.319 seconds
+Cell Detection: 1 minutes, 26.210 seconds
+Cell Count Verification: PASS
+Cell Classification: 0.160 seconds
+Measurement Export: 25.752 seconds
+Overall time: 1 minutes, 58.458 seconds
+Version: 0.2.3
+Build time: 2021-06-28, 19:19
+```
+Specs:
+- AMD Ryzen Threadripper PRO 3975WX
+- 128 Gb RAM (100 Gb allocated for QuPath)
 ## To do
 - See if there’s a way to get system specifications exported through the benchmarking script
 - Modularize the script to run a specific set of benchmarks depending on which image is being processed. Expands ability to make new benchmarks for different image types (i.e. multiplexed IF), all while keeping it contained within a single script and project.
